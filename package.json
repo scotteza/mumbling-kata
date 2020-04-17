@@ -1,0 +1,14 @@
+{
+  "name": "mumbling",
+  "version": "1.0.0",
+  "description": "Mumbling Kata ",
+  "main": "mumbling.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Joshua-Luke Bevan",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^25.3.0"
+  }
+}
