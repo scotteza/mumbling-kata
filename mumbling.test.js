@@ -1,11 +1,14 @@
 function mumble_letters(letters) {
-  if (letters.length === 2) {
-    return `${letters[0].toUpperCase()}-${letters[1].toUpperCase()}${letters[1].toLowerCase()}`;
-  } else if (letters.length === 3) {
-    return `${letters[0].toUpperCase()}-${letters[1].toUpperCase()}${letters[1].toLowerCase()}-${letters[2].toUpperCase()}${letters[2].toLowerCase()}${letters[2].toLowerCase()}`;
+  let result = "";
+  for (var i = 0; i < letters.length; i++) {
+    let currentCharacter = letters.charAt(i).toUpperCase();
+    result = result + currentCharacter;
+    result = result + currentCharacter.toLowerCase().repeat(i);
+    if (i != letters.length - 1) {
+      result = result + "-";
+    }
   }
-
-  return letters.toUpperCase();
+  return result;
 }
 
 test("Empty test", () => {
