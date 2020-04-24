@@ -58,3 +58,12 @@ test('Mumbles a three letter word "abc"', () => {
 test('Mumbles a three letter word "AbC"', () => {
   expect(mumble_letters("AbC")).toBe("A-Bb-Ccc");
 });
+test('Mumbles a test case from the kata "abC"', () => {
+  expect(mumble_letters("abC")).toBe("A-Bb-Ccc");
+});
+test('Mumbles a test case from the kata "aBCd"', () => {
+  expect(mumble_letters("aBCd")).toBe("A-Bb-Ccc-Dddd");
+});
+test('Mumbles a test case from the kata "QWERTY"', () => {
+  expect(mumble_letters("QWERTY")).toBe("Q-Ww-Eee-Rrrr-Ttttt-Yyyyyy");
+});
