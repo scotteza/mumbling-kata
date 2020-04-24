@@ -22,16 +22,16 @@ test("Empty test", () => {
 test("Mumbles nothing", () => {
   expect(mumble_letters("")).toBe("");
 });
-test('Mumbles a single letter "A"', () => {
+test('Mumbles a single letter "a"', () => {
   expect(mumble_letters("a")).toBe("A");
 });
-test('Mumbles a single letter "B"', () => {
+test('Mumbles a single letter "b"', () => {
   expect(mumble_letters("b")).toBe("B");
 });
 test('Mumbles a capital letter "A"', () => {
   expect(mumble_letters("A")).toBe("A");
 });
-test("Mumbles a two letter word", () => {
+test('Mumbles a two letter word "aa"', () => {
   expect(mumble_letters("aa")).toBe("A-Aa");
 });
 test('Mumbles a two letter word "bb"', () => {
@@ -58,12 +58,12 @@ test('Mumbles a three letter word "abc"', () => {
 test('Mumbles a three letter word "AbC"', () => {
   expect(mumble_letters("AbC")).toBe("A-Bb-Ccc");
 });
-test('Mumbles a test case from the kata "abC"', () => {
+test('Mumbles "abC"', () => {
   expect(mumble_letters("abC")).toBe("A-Bb-Ccc");
 });
-test('Mumbles a test case from the kata "aBCd"', () => {
+test('Mumbles "aBCd"', () => {
   expect(mumble_letters("aBCd")).toBe("A-Bb-Ccc-Dddd");
 });
-test('Mumbles a test case from the kata "QWERTY"', () => {
+test('Mumbles "QWERTY"', () => {
   expect(mumble_letters("QWERTY")).toBe("Q-Ww-Eee-Rrrr-Ttttt-Yyyyyy");
 });
