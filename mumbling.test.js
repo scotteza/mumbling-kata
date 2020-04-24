@@ -67,3 +67,6 @@ test('Mumbles "aBCd"', () => {
 test('Mumbles "QWERTY"', () => {
   expect(mumble_letters("QWERTY")).toBe("Q-Ww-Eee-Rrrr-Ttttt-Yyyyyy");
 });
+
+// Python3 solution
+// return '-'.join((value*index).capitalize() for index, value in enumerate(letters, start=1))
