@@ -1,9 +1,14 @@
 function mumble_letters(letters) {
   let result = "";
   for (var i = 0; i < letters.length; i++) {
-    let currentCharacter = letters.charAt(i).toUpperCase();
-    result = result + currentCharacter;
-    result = result + currentCharacter.toLowerCase().repeat(i);
+    const currentCharacter = letters.charAt(i);
+
+    const upperCharacter = currentCharacter.toUpperCase();
+    result = result + upperCharacter;
+
+    const lowerCharacter = currentCharacter.toLowerCase();
+    result = result + lowerCharacter.repeat(i);
+
     if (i != letters.length - 1) {
       result = result + "-";
     }
