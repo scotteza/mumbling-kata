@@ -9,6 +9,6 @@
   "author": "Joshua-Luke Bevan",
   "license": "MIT",
   "dependencies": {
-    "jest": "^25.3.0"
+    "jest": "^29.3.1"
   }
 }
